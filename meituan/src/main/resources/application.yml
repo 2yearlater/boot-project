@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: reggie_take_out
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: lhq19971026lyn
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+#mybatisPlus配置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true  #开启驼峰命名法,在映射实体类或者属性时,将数据库表名和字段名中的下划线去掉,按照驼峰法命名
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+reggie:
+  bathPath: /Users/macbook/Desktop/reggie_project/资料/pictures/
